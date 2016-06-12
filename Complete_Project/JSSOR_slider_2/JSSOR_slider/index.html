@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spa Home Page</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/custom.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Audiowide&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+	<script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideoTransitions = [
+              [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
+              [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
+              [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+
+
+
+	<div class="wrapper">
+<!--.....start of Header and Slider Image Property .......-->
+		
+	
+			<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;" >
+			
+				<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+				
+					<div data-p="225.00"  style="display: none;">
+						<img data-u="image" src="img/red.jpg" alt="logo" />
+					</div>
+					<div data-p="225.00"  style="display: none;">
+						<img data-u="image" src="img/purple.jpg" alt="logo"/>
+					</div>
+					<div data-p="225.00" style="display: none;">
+						<img data-u="image" src="img/blue.jpg" alt="logo" />
+					</div>
+					
+					<div data-p="225.00" style="display: none;">
+						<img data-u="image" src="img/00_08.png" alt="logo" />
+					</div>
+					
+					<div data-p="225.00" style="display: none;">
+						<img data-u="image" src="img/00_12.png" alt="logo"/>
+					</div>
+					<div data-p="225.00" style="display: none;">
+						<img data-u="image" src="img/00_13.png" alt="logo" />
+					</div>
+					<div data-p="225.00" style="display: none;">
+						<img data-u="image" src="img/00_16.png" alt="logo" />
+					</div>	
+					<div data-p="225.00" style="display: none;">
+						<img data-u="image" src="img/00_02.png" alt="logo" />
+					</div>	
+				</div>
+	<!-- Bullet Navigator -->
+				<div class="jssorb05" data-autocenter="1" data-u="navigator" style="bottom: 16px; right: 16px;width: 68px;height: 16px;left: 616px;" >
+	<!-- bullet navigator item prototype -->
+					<div data-u="prototype" style="width: 16px; height: 16px; position: absolute; left: 0px; top: 0px;"></div>
+					<div data-u="prototype" style="width: 16px; height: 16px; position: absolute; left: 26px; top: 0px;"></div>
+					<div data-u="prototype" style="width: 16px; height: 16px; position: absolute; left: 52px; top: 0px;"></div>
+				</div>
+	<!-- Arrow Navigator -->
+				<span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+				<span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+			</div>
+
+		
+		
+		
+		
+	
+	<div class="_header">
+				<div class="container">
+					<div class="header_logo_header_menu">
+						<div class="header_logo">
+							<a href="#"><img id="Logo" src="images/logo.png" alt="logo"/></a>
+						</div>
+						<div class="header_menu">	
+						    <ul class="navmenu">
+								<li><a href="">Home</a></li>
+					<!--About Us menu start-->			
+								<li class="about"><a href=""><span class="caret">About Us </span></a>
+									<ul>
+										<li><a href="">Overview</a></li>
+										<li><a href="">Vision</a></li>
+										<li><a href="">Leadership</a></li>
+										<li><a href="">History</a></li>
+									</ul>
+								</li>
+					<!--About Us menu End-->	
+
+					<!--service menu start-->
+					
+								<li class="service_li"><a href="">Services</a>
+									<ul class="service_li_ul">
+										<li><a href="">e-Governce</a></li>
+										<li><a href="">Web API</a></li>								
+										<li class="security_li"><a href="">Security</a>
+											<ul class="security_ul_li_ul">
+												<li><a href="">PM Security</a></li>
+												<li><a href="">Local</a></li>
+												<li><a href="">Cyber</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+					<!--service menu end-->
+
+					<!--Membership menu start-->				
+								<li class="membership"><a href="">Membership</a>
+									<ul>
+										<li><a href="">Local</a></li>
+										<li><a href="">Foreign</a></li>
+									</ul>
+								</li>
+					<!--Membership menu end-->			
+
+					<!--Gallery menu start-->			
+								<li class="gallery"><a href="">Gallery</a>
+									<ul>
+										<li><a href="">Current</a></li>
+										<li><a href="">Previous</a></li>
+									</ul>
+								</li>
+					<!--Gallery menu end-->	
+
+					<!--Contact Us menu start-->		
+								<li class="contact"><a href="">Contact Us</a>
+									<ul>
+										<li><a href="">Drop A Line</a></li>
+										<li><a href="">Give A Ring</a></li>
+									</ul>
+								</li>
+					<!--Contact Us menu end-->
+			
+							</ul>
+					   </div>
+					   
+					</div>
+					
+			</div>
+		</div>	
+				
+	
+ <!--.......End of Header and Slider Image Property....... -->
+			
+			
+<!--.......start of Textbox Property .........-->	
+			<div class="container">	
+				<div class="textbox">
+					<div class="col_text">
+						<h3>RELAX _</h3>
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismood tincidunt ut laoreet dolore magna
+						aliquam erat volutpat.</p>
+						<a href="#">Read More</a>
+					</div>
+								
+					<div class="col_text">
+						<h3>INDULGE _</h3>
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismood tincidunt ut laoreet dolore magna
+						 aliquam erat volutpat.</p>
+						 <a href="#">Read More</a>
+					</div>
+								
+					<div class="col_text">
+						<h3>EXPERIENCE _</h3>
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismood tincidunt ut laoreet dolore magna
+						aliquam erat volutpat.</p>
+						<a href="#">Read More</a>
+					</div>
+							
+					<div class="col_text">
+						<h3>ENJOY _</h3>
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismood tincidunt ut laoreet dolore magna
+						aliquam erat volutpat.</p>
+						<a href="#">Read More</a>
+					</div>
+					
+				</div>
+			</div>	
+<!--End of Textbox Property ........-->
+
+
+<!--Start of Footer Property ........-->									
+	<div class="footer">						
+		<div class="container">
+			<div class="footer_icon">
+			
+				<ul class="footer_icon_menu_ul">
+					<li id="icon_text"><a href="#"></a>FOLLOW US _</li>
+					<li><a href="#"><img src="images/00_05.png" alt="tweet"/></a></li>
+					<li><a href="#"><img src="images/00_06.png" alt="fb"/></a></li>
+					<li><a href="#"><img src="images/00_07.png" alt="g+"/></a></li>
+				</ul>
+			</div>
+			<div class="footer_menu">
+				<ul class="footer_menu_ul">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Membership</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Contact Us</a></li>
+				</ul>
+				<div class="copyright">
+					<p>Copyright &copy; 2014, Imperial Apple spa.</p>
+				</div>
+			</div>
+		 </div>
+	 </div>	
+<!--End of Footer Property ........-->
+
+</div>   
+<!--wrapper class end here ........-->    					
+		
+						
+								
+	 
+</body>
+</html>

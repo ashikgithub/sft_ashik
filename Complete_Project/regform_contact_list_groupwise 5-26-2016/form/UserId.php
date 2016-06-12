@@ -1,0 +1,1 @@
+<?php	//include 'config.php';	session_start();	if( !isset( $_SESSION['email'] ) && !isset( $_SESSION['pass'] ) )	{			header('location:signin.php');	}	if(isset($_REQUEST['id']))		{			$id= $_REQUEST['id'];		}	function user_Id()	{		return $id;	}	$EMAIL = $_SESSION['email'];	$PASSWORD =$_SESSION['pass'];?>

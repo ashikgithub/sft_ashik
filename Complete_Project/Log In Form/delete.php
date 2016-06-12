@@ -1,0 +1,1 @@
+<?php 	session_start();	if( !isset( $_SESSION['name'] ) )	{		header("location:signin.php");	}	include 'config.php';	if(isset($_REQUEST['id']))	{		$id= $_REQUEST['id'] ;		$Query = "DELETE FROM registraion WHERE st_id= $id ";		mysql_query($Query);		header('location: admin.php');	}	else	{		header('location:admin.php');	}?>
