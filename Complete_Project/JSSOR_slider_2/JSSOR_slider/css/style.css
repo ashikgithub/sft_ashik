@@ -1,0 +1,252 @@
+/* ......This is for css reset ......*/
+*{ 
+	margin:0;
+	padding:0;
+}
+
+.wrapper{
+	/*width:100%;/* never use width of wrapper class*/
+	/*font-family: 'Audiowide', cursive;*/
+	font-family: 'Kanit', sans-serif;
+	font-size:14px;
+	background-color:#020204;
+}
+.wrapper ._header{
+	background-color:black;
+	position: absolute;
+	top: 0;
+	/* margin:0 auto; */
+	width: 100%;
+	opacity: 0.7;
+}
+/*.......Start css for container........*/
+.container{	
+	width:1100px;
+	margin:0 auto;
+}
+/*.......Start css for header logo ........*/
+
+.container .header_logo_header_menu{
+	background-color:#191A1A;
+}
+.container .header_logo{				
+	width:476px;
+	float:left;
+}
+		
+/* ......Edit logo1 using css......*/
+.container .header_logo_header_menu .header_logo #Logo{
+	margin-top:20px;
+	padding-bottom:13px;
+	border:none;
+	
+}
+
+/*.....start header menu........*/
+.container .header_menu{	
+	width:620px;
+	float:right;
+	margin-top:50px;
+	
+}
+/*.....selector of header menu........*/
+/*.container .header_menu #menu_selector{	
+	margin-left:33px;
+	margin-bottom:30px;
+	
+}*/
+.container .header_menu ul{	
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.container .header_menu ul li{
+	float:left;
+	list-style:none;
+	position:relative;
+    color:#fff;
+	
+}
+.container .header_menu ul li a{
+	text-align:center;
+	text-decoration:none;
+	line-height:30px;
+	width:100px;
+	transition:all linear .15s;
+	display:block;
+	color:#fff;
+	padding-left:3px;
+}
+.container .header_menu ul ul{
+	position:absolute;
+	display:none;
+	top: 60px;
+}
+.container .header_menu ul li a:hover{
+	/*#664400    */color:#93885A;
+}
+.container .header_menu ul li:hover ul{
+	background-color:#fff;
+	display:block;
+	transition:all linear 5s;
+}
+.container .header_menu ul li:hover ul li{
+	background-color:#000;
+	display:inline-block;
+}
+
+.container .header_menu ul li:hover ul li a:hover{
+	background-color:#664400;    /* #4C8CF5; */
+	color:#fff; 
+}
+.navmenu .service_li .service_li_ul .security_li:hover ul{
+	display:block;
+	top:0px;
+	margin-left:100px;
+}
+
+.navmenu .service_li .service_li_ul .security_li ul{
+	display:none;
+}
+.about > a, .service_li > a, .membership > a, .gallery > a,.contact > a{
+	padding-bottom:30px;
+}
+
+/*.....End header menu........*/
+/*.......End css for body_header..........*/
+
+
+/*......... Start css for TextBox..........*/
+.container .textbox{								
+	overflow:hidden;
+	padding-bottom:50px;
+	color:#fff;
+	margin-top:80px;
+}
+.container .textbox .col_text {
+
+	float: left;
+    width: 234px;
+    margin-right: 8px;
+    margin-left: 12px;
+    padding: 10px;	
+}
+.container .textbox a{
+	display:inline-block;
+	text-decoration:none;
+	color:#fff;
+	background-color:#000;
+	border: 1px solid #fff;
+	padding: 3px;
+	margin-top:15px;
+	width: 96px;
+	text-align: center;
+}
+.container .textbox  a:hover{
+	color:#948A5A;
+	border-color: #93885A;
+}
+	
+.container .textbox h3{
+	color:#93885A;
+	font-family: 'Audiowide', cursive;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+.container .textbox p{
+	line-height: 1.5;
+    padding-bottom: 6px;
+}
+
+/*......... End css for TextBox..........*/
+
+
+/*......... Start Footer..........*/
+
+
+
+/* footer icon menu start here........*/
+.wrapper .footer{
+	overflow:hidden;
+	background-color:#1F1F1F;
+}
+.container .footer_icon{				
+	width:480px;
+}
+.container .footer_icon_menu_ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.container .footer_icon_menu_ul li{
+	float:left;
+	margin-top: 35px;
+}
+.container .footer_icon_menu_ul li a{
+	text-decoration:none;
+	padding:2px;
+	margin-right:2px;
+}	
+.container .footer_icon_menu_ul li a img{
+	border:none;
+	margin-left:3px;
+}							
+.container .footer_icon_menu_ul #icon_text{
+
+    margin-top: 37px;
+	color:#fff;
+	margin-right: 30px;
+	font-family: 'Audiowide', cursive;
+	font-size: 27px;
+	margin-left: 13px;
+
+}/* footer icon menu End here........*/
+
+
+/* footer menu Start here........*/
+.container .footer_menu{	
+	width:480px;
+	float:right;
+}
+
+.container .footer_menu .footer_menu_ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.container .footer_menu .footer_menu_ul li{
+	float:left;
+	margin-top: 37px;
+	margin-left:4px;
+	margin-right: 10px;
+}
+.container .footer_menu .footer_menu_ul li a{
+	display:block;
+	text-decoration:none;
+	padding:6px;
+	padding-left:2px;
+	color:#fff;
+	font-size: 14px;
+}		
+.container .footer_menu .footer_menu_ul li a:hover{
+	color:#948A5A;
+}			
+.container .footer_menu .copyright p{
+	float:right;
+	margin-top: 28px;
+	color:#737373;
+	text-align:right;
+	margin-right:13px;
+	margin-bottom:32px;
+
+}/* footer menu End here........*/
+
+/*......... End css for Footer..........*/
+
+
+
+
+
+
+
+
