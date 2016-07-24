@@ -1,0 +1,1 @@
+<?php	function session_valid_id($session_id)	{		$id=$session_id;		return $id; //preg_match('/^[-,a-zA-Z0-9]{1,128}$/', $session_id) > 0;	}?>
